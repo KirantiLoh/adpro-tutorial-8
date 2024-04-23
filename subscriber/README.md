@@ -4,3 +4,6 @@ b. Guest pertama menandakan username, guest kedua menandakan password, dan local
 ## Simulating slow subscriber
 ![slow](image.png)
 Grafik queued messages mengalami lonjakan ketika simulasi subscriber yang lambat karena subscriber hanya bisa consume message dengan kecepatan itu dan message yang dikirimkan publisher masih ada yang belum di consume. Message yang belum di-consume akan ditahan dalam sebuah antrian dan akan ditahan sampai ada subscriber yang dapat consume message lagi.
+## Multiple subscriber scenario
+![multiple](image-1.png)
+Grafik queued message mengalami penurunan lebih cepat karena terdapat banyak subscriber yang consume message sehingga message yang dimasukkan dalam antrian keluar lebih cepat dibanding hanya ada 1 subscriber.
